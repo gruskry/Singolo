@@ -104,7 +104,7 @@ li {
 
 .phone-image-one {
     display: inline-block;
-    background: url(image/phone-vertical.jpg);
+    background: url(assets/phone-vertical.jpg);
     width: 240px;
     height: 483px;
     margin-right: 14px;
@@ -113,7 +113,7 @@ li {
 
 .phone-image-two{
     display: inline-block;
-    background: url("image/phone-horizontal.jpg");
+    background: url("assets/phone-horizontal.jpg");
     width: 483px;
     height: 240px;
 
@@ -129,14 +129,14 @@ li {
 }
 
 .chev-left {
-    background-image: url("image/chev-left.jpg");
+    background-image: url("assets/chev-left.jpg");
     display: inline-block;
     width: 16px;
     height: 27px;
   }
 
   .chev-right {
-    background-image: url("image/chev-right.jpg");
+    background-image: url("assets/chev-right.jpg");
     display: inline-block;
     height: 27px;
     width: 16px;
