@@ -1,0 +1,253 @@
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.quote-block {
+    height: 655px;
+    background-color: #f06c64;
+    padding: 0 40px;
+    border-bottom: 5px solid #ea676b;
+    font-family: 'Lato', sans-serif;
+}
+
+.portfolio-header {
+    font-size: 30px;
+    color:#f0d8d9;;
+    padding: 60px 0 23px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+
+.portfolio-text {
+    font-size: 18px;
+    color:#f0d8d9;;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    
+}
+
+.contacts-form {
+    margin-top: 45px;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+}
+
+.form {
+    width: 619px;
+    height: 38px;
+    display: inline-block;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.form__field {
+    margin-bottom: 15px;
+}
+
+.form input {
+    outline: none;
+    
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    background-color: #d6564f;
+    
+}
+
+.form textarea {
+    width: 100%;
+    height: 200px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    background-color: #d6564f;
+    resize: none;
+    
+}
+
+
+::placeholder {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: "Lato";
+    font-weight: 400;
+    opacity: 1; 
+    transition: opacity 0.3s ease;
+}
+
+
+:focus::placeholder {
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+
+
+.form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 2px;
+    border: 0;
+    background-color: #d6564f;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.4s linear;
+}
+
+.form button:hover {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #ccc;
+    color: #d6564f;
+    cursor: pointer;
+    transition: background-color 0.4s linear;
+}
+
+.form__error {
+    color: red;
+    text-align: left;
+    font-size: 12px;
+    display: block;
+    margin-top: 3px;
+    display: none;
+}
+
+input:invalid:not(:placeholder-shown) + .form__error {
+    display: block;
+}
+
+.contacts {
+    display: inline-block;
+    width: 300px;
+    height: 175px;
+    margin-left: 25px;
+}
+
+.contacts-header {
+    font-size: 18px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.contacts-text {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.contacts-ad { 
+   display: flex;
+   align-items: center;
+}
+
+.ad-text {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.contacts-ad a {
+    text-decoration: none;
+}
+
+.locate {
+    background-image: url(assets/icons/location.png);
+    width: 8px;
+    height: 14px;
+    background-repeat: no-repeat;  
+    padding-right: 20px;
+    
+}
+
+.phone {
+    background-image: url(assets/icons/phone.png);
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    padding-right: 20px;
+}
+
+.mail{
+    background-image: url(assets/icons/mail.png);
+    width: 14px;
+    height: 8px;
+    background-repeat: no-repeat;
+    padding-right: 20px;
+
+    
+}
+
+
+
+.footer {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d303a;
+    padding: 0 40px;
+    align-items: center;
+}
+
+.social-icons{
+    display: flex;
+
+}
+
+.icon-facebook{
+    background-image: url('assets/icons/facebook.png');
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+}
+
+.icon-google {
+    background-image: url('assets/icons/Google.png');
+    width: 35px;
+    height: 35px;
+    margin-right: 5px
+}
+
+.icon-twitter {
+    background-image: url('assets/icons/twitter.png');
+    width: 35px;
+    height: 35px;
+    margin-right: 5px
+}
+
+.icon-linked {
+    background-image: url('assets/icons/LinkedIn.png');
+    width: 35px;
+    height: 35px;
+}
+
+.footer-s {
+    color: #4c5266;
+    font-style: 'Lato';
+    font-size: 12px;
+}
