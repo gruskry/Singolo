@@ -497,7 +497,7 @@ li.twelve{
 }
 
 .icon-twitter {
-    background-image: url('assets/icons/twitter.png');
+    background-image: url('assets/icons/Twitter.png');
     width: 35px;
     height: 35px;
     margin-right: 5px
@@ -728,35 +728,6 @@ input:invalid:not(:placeholder-shown) + .form__error {
 
 .social-icons{
     display: flex;
-
-}
-
-.icon-facebook{
-    background-image: url('assets/icons/facebook.png');
-    width: 35px;
-    height: 35px;
-    margin-right: 5px;
-}
-
-.icon-google {
-    background-image: url('assets/icons/Google.png');
-    width: 35px;
-    height: 35px;
-    margin-right: 5px
-}
-
-.icon-twitter {
-    background-image: url('assets/icons/twitter.png');
-    width: 35px;
-    height: 35px;
-    margin-right: 5px
-}
-
-.icon-linked {
-    background-image: url('assets/icons/LinkedIn.png');
-    width: 35px;
-    height: 35px;
-}
 
 .footer-s {
     color: #4c5266;
