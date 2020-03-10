@@ -669,7 +669,7 @@ input:invalid:not(:placeholder-shown) + .form__error {
     color: #f0d8d9;
     font-family: "Lato";
     font-weight: 400;
-    padding-bottom: 20px;
+    padding-bottom: 26px;
     text-align: justify;
 }
 
