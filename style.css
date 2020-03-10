@@ -228,6 +228,8 @@ li {
     line-height: 21px;
     letter-spacing: -0.0047em;
     text-align: justify;
+    
+    overflow: hidden;
 }
 
 body {
@@ -468,6 +470,7 @@ li.twelve{
     width: 300px;
     white-space: nowrap;
     text-overflow: clip;
+    overflow: hidden;
 }
 
 .text-name {
