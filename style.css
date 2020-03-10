@@ -173,6 +173,7 @@ li {
     display: flex;
     text-align: stretch;
     letter-spacing: -0.05px;
+    text-align: justify;
    
     
 }
@@ -269,6 +270,7 @@ body {
     font-size: 18px;
     line-height: 30px;
     font-weight: 300;
+    text-align: justify;
 }
 
 .nav-bar {
@@ -543,6 +545,7 @@ li.twelve{
     font-size: 18px;
     line-height: 30px;
     font-weight: 300;
+    text-align: justify;
     
 }
 
@@ -667,6 +670,7 @@ input:invalid:not(:placeholder-shown) + .form__error {
     font-family: "Lato";
     font-weight: 400;
     padding-bottom: 20px;
+    text-align: justify;
 }
 
 .contacts-ad { 
@@ -728,6 +732,7 @@ input:invalid:not(:placeholder-shown) + .form__error {
 
 .social-icons{
     display: flex;
+}
 
 .footer-s {
     color: #4c5266;
