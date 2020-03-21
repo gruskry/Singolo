@@ -9,44 +9,60 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
+<body id="home">
+    <div class="container" id="container">
         <header class="header">
-            <div class="header-cont">
+            <div class="header-cont" >
                 <h1 class="logo">Singolo<span>*</span></h1>
                 <nav class="nav">
-                    <ul>
+                    <ul id="menu">
                         <li>
-                    <a class="nav-item-first" href="#">Home</a>
+                    <a class="nav-item nav-item-active" href="#home" id="active">Home</a>
                         </li>  
                         <li>
-                    <a class="nav-item" href="#">Services</a>
+                    <a class="nav-item"  href="#services">Services</a>
                         </li>
                         <li>
-                    <a class="nav-item" href="#">Portfolio</a>
+                    <a class="nav-item" href="#portfolio">Portfolio</a>
                         </li>
                         <li>
-                    <a class="nav-item" href="#">About</a>
+                    <a class="nav-item" href="#about">About</a>
                         </li>
                         <li>    
-                    <a class="nav-item" href="#">Contact</a>
+                    <a class="nav-item" href="#contact">Contact</a>
                         </li>
                     </ul>
 
                 </nav>
             </div>
         </header>
-
-        <div class="slider-block">
-            <a href="#"><div class="chev-left"></div></a>
-                <div class="phone-image-one"></div>
-                <div class="phone-image-two"></div>
-            <a href="#"><div class="chev-right"></div></a>
+        <div class="slider">
+            <div class="slider__wrapper">
+                <div class="slider__items">
+                <div class="slider__item">
+                    <div class="slider-img-one"> 
+                        <span class="tel vertical" id="black-vertical"></span>
+                        <span class="tel horizontal" id="black-horizontal"></span>
+                        <a onclick = "vertical()" class="tel size-vertical" id="tel-vertical" ></a>
+                        <a onclick = "horizont()" class="tel size-horizontal" id="tel-horizontal"></a>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider-img-two"></div>
+                </div>
+                </div>
+            </div>
+            <a class="slider__control slider__control_prev" href="#" role="button"></a>
+            <a class="slider__control slider__control_next" href="#" role="button"></a>
+               
         </div>
+                
+        
+
         <section class="section">
         <div class="service-block">
             <div class="inner">
-                <h2 class="service-block-inner">Our Services</h2>
+                <h2 class="service-block-inner" id="services">Our Services</h2>
                 <span class="service-block-p">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
                     Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
                     Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
@@ -77,8 +93,6 @@
                             Morbi at aliquet turpis, et consequat felis. Quisque condimentum. </p>
                     </div>  
                 </div>
-            </div>
-            <div class="three-columns">
                 <div class="item-column">
                     <img class="icon-column" src="assets/icons/phone-1.png" alt="">
                     <div class="about-column">   
@@ -106,48 +120,48 @@
             </div>
             
         </section>
-        </div>
-    </div>
+        
+    
 
-    <div class="container">
+    
         <section class="portfolio-block">
-            <h1 class="portfolio-header">Portfolio</h1>
+            <h2 class="portfolio-header" id="portfolio">Portfolio</h2>
             <p class="portfolio-text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
             <div class="nav-bar">
-                <ul class="nav-list">
-                    <a href="#"><li class="item-nav">All</li></a>
-                     <a href="#"><li class="item-nav">Web Design</li></a>
-                     <a href="#"><li class="item-nav">Graphic Design</li></a>
-                     <a href="#"><li class="item-nav">Artwork</li></a>
+                <ul class="nav-list" id="nav-list">
+                    <a href="#portfolio" onclick="Swap()"><li class="item-nav">All</li></a>
+                     <a href="#portfolio" onclick="Swap()"><li class="item-nav">Web Design</li></a>
+                     <a href="#portfolio" onclick="Swap()"><li class="item-nav">Graphic Design</li></a>
+                     <a href="#portfolio" onclick="Swap()"><li class="item-nav">Artwork</li></a>
                 </ul>
             </div>
             <div class="portfolio-images">
-                <ul class="images-list">
-                    <li class="item-image one"></li>
-                    <li class="item-image two"></li>
-                    <li class="item-image three"></li>
-                    <li class="item-image four"></li>
-                    <li class="item-image five"></li>
-                    <li class="item-image six"></li>
-                    <li class="item-image seven"></li>
-                    <li class="item-image eight"></li>
-                    <li class="item-image nine"></li>
-                    <li class="item-image ten"></li>
-                    <li class="item-image eleven"></li>
-                    <li class="item-image twelve"></li>
-                </ul>
+                <div class="images-list" id="images-list">
+                    <img src="assets/one.jpg" class="item-image one">
+                    <img src="assets/two.jpg" class="item-image two">
+                    <img src="assets/three.jpg" class="item-image three">
+                    <img src="assets/four.jpg" class="item-image four">
+                    <img src="assets/five.jpg" class="item-image five">
+                    <img src="assets/six.jpg" class="item-image six">
+                    <img src="assets/seven.jpg" class="item-image seven">
+                    <img src="assets/eight.jpg" class="item-image eight">
+                    <img src="assets/nine.jpg" class="item-image nine">
+                    <img src="assets/ten.jpg" class="item-image ten">
+                    <img src="assets/eleven.jpg" class="item-image eleven">
+                    <img src="assets/twelve.jpg" class="item-image twelve">
+                </div>
             </div>
         </section>
     
         <section class="about-us">
-            <h1 class="portfolio-header">About Us</h1>
+            <h2 class="portfolio-header" id="about">About Us</h2>
             <p class="portfolio-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
                 Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
                 Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <div class="about-info">
                 <div class="person-one">
                     <div class="image-pic-one"></div>
-                    <h2 class="header-name">Adam Jensen</h2>
+                    <h3 class="header-name">Adam Jensen</h3>
                     <p class="text-name">Quisque luctus, quam eget molestie commodo, 
                         lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
                     <ul class="social-icons">
@@ -159,7 +173,7 @@
                 </div>
                 <div class="person-two">
                     <div class="image-pic-two"></div>
-                    <h2 class="header-name">Desmond Miles</h2>
+                    <h3 class="header-name">Desmond Miles</h3>
                     <p class="text-name">Curabitur vestibulum eget mauris quis laoreet. 
                         Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
                     <ul class="social-icons">
@@ -171,7 +185,7 @@
                 </div>
                 <div class="person-three">
                     <div class="image-pic-three"></div>
-                    <h2 class="header-name">Scolara Visari</h2>
+                    <h3 class="header-name">Scolara Visari</h3>
                     <p class="text-name">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. 
                         Quisque condimentum.</p>
                     <ul class="social-icons">
@@ -185,31 +199,42 @@
         </section>
 
         <section class="quote-block">
-            <h1 class="quote-header">Get a Quote</h1>
+            <h2 class="quote-header" id="contact">Get a Quote</h2>
             <p class="quote-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
                 Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
                 Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
 
             <div class="contacts-form">
-                <form action="#" class="form">
+                <form action="#contact" class="form">
                     <div class="form__field">
-                        <input type="text" name="name" placeholder="Name" required />
+                        <input type="text" name="name" placeholder="Name" id="name" required />
                         <span class="form__error">Это поле должно содержать Имя </span>
                     </div>
                     <div class="form__field">
-                        <input type="email" name="name" placeholder="E-Mail"  required/>
+                        <input type="email" name="name" placeholder="E-Mail" id="E-Mail"  required/>
                         <span class="form__error">Это поле должно содержать E-Mail в формате example@site.com </span>
                     </div>
                     <div class="form__field">
-                        <input type="text" name="subject" placeholder="Subject">
+                        <input type="text" name="subject" placeholder="Subject" id="subject">
                     </div>
                     <div class="form__field">
-                        <textarea type="text" placeholder="Describe your project in detail..."></textarea>
+                        <textarea type="text" placeholder="Describe your project in detail..." id="description"></textarea>
                     </div>
-                    <button type="submit">Submit</button>
+                    <button type="submit" class="sbm" id="btn">Submit</button>
                 </form>
+
+                <div id="message-block" class="hidden">
+                    <div id="message">
+                        <p id="message-send">Письмо отправлено</p>
+                        <p><span id="result">Тема:</span></p>
+                        <p><span id="result1">Описание:</span></p>
+                        <br>
+                        <button type="submit" id="close-btn">OK</button>
+                    </div>
+                </div>
+
                 <div class="contacts">
-                    <h2 class="contacts-header">Contact Information</h2>
+                    <h3 class="contacts-header">Contact Information</h3>
                     <p class="contacts-text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. </p>
                     <div class="contacts-ad">
                         <div class="locate"></div>
@@ -227,6 +252,8 @@
                     
                 </div>
             </div>
+
+            
                    
         </section>
         <footer class="footer">
@@ -240,7 +267,7 @@
         </footer>
     </div>
 
-    
+    <script src="script.js"></script>
 </body>
 
 </html>
