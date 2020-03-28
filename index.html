@@ -9,15 +9,38 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 </head>
-<body id="home">
+<body>
+    <div class="mob-nav">
+        <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+       
+        <label class="btn-menu" for="hmt">
+            <span class="first"></span>
+            <span class="second"></span>
+            <span class="third"></span>
+        </label>
+        
+        <h1 class="logo">Singolo<span>*</span></h1>
+       
+        <ul class="hidden-menu" >
+            <h1 class="logo-hid">Singolo<span>*</span></h1>
+            <li><a class="nav-item nav-item-active" href="#home" id="active">Home</a></li>  
+            <li><a class="nav-item"  href="#services">Services</a></li>
+            <li><a class="nav-item" href="#portfolio">Portfolio</a></li>  
+            <li><a class="nav-item" href="#about">About</a></li>
+            <li><a class="nav-item" href="#contact">Contact</a></li>      
+        </ul>
+    </div>
+    </nav>
     <div class="container" id="container">
+        <h2 id="home" class="home">Home</h2>
         <header class="header">
+            
             <div class="header-cont" >
                 <h1 class="logo">Singolo<span>*</span></h1>
                 <nav class="nav">
                     <ul id="menu">
                         <li>
-                    <a class="nav-item nav-item-active" href="#home" id="active">Home</a>
+                    <a class="nav-item nav-item-active " href="#home" id="active" >Home</a>
                         </li>  
                         <li>
                     <a class="nav-item"  href="#services">Services</a>
@@ -40,7 +63,8 @@
             <div class="slider__wrapper">
                 <div class="slider__items">
                 <div class="slider__item">
-                    <div class="slider-img-one"> 
+                    <div class="slider-img"> 
+                        <img class="slider-img-one"src="assets/Slider-1.png">
                         <span class="tel vertical" id="black-vertical"></span>
                         <span class="tel horizontal" id="black-horizontal"></span>
                         <a onclick = "vertical()" class="tel size-vertical" id="tel-vertical" ></a>
@@ -48,7 +72,9 @@
                     </div>
                 </div>
                 <div class="slider__item">
-                    <div class="slider-img-two"></div>
+                    <div class="slider-img">
+                        <img class="slider-img-two" src="assets/Slider-2.png">
+                    </div>
                 </div>
                 </div>
             </div>
@@ -62,7 +88,7 @@
         <section class="section">
         <div class="service-block">
             <div class="inner">
-                <h2 class="service-block-inner" id="services">Our Services</h2>
+                <h2 class="service-block-inner" id="services" >Our Services</h2>
                 <span class="service-block-p">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
                     Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
                     Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
@@ -125,6 +151,7 @@
 
     
         <section class="portfolio-block">
+            <div class="port-wrap">
             <h2 class="portfolio-header" id="portfolio">Portfolio</h2>
             <p class="portfolio-text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
             <div class="nav-bar">
@@ -135,20 +162,23 @@
                      <a href="#portfolio" onclick="Swap()"><li class="item-nav">Artwork</li></a>
                 </ul>
             </div>
+            </div>
             <div class="portfolio-images">
                 <div class="images-list" id="images-list">
-                    <img src="assets/one.jpg" class="item-image one">
-                    <img src="assets/two.jpg" class="item-image two">
-                    <img src="assets/three.jpg" class="item-image three">
-                    <img src="assets/four.jpg" class="item-image four">
-                    <img src="assets/five.jpg" class="item-image five">
-                    <img src="assets/six.jpg" class="item-image six">
-                    <img src="assets/seven.jpg" class="item-image seven">
-                    <img src="assets/eight.jpg" class="item-image eight">
-                    <img src="assets/nine.jpg" class="item-image nine">
-                    <img src="assets/ten.jpg" class="item-image ten">
-                    <img src="assets/eleven.jpg" class="item-image eleven">
-                    <img src="assets/twelve.jpg" class="item-image twelve">
+                    <ul>
+                    <li class="pic01"><img src="assets/one.jpg" class="item-image one" ></li>
+                    <li class="pic02"><img src="assets/two.jpg" class="item-image two" ></li> 
+                    <li class="pic03"><img src="assets/three.jpg" class="item-image three" ></li> 
+                    <li class="pic04"><img src="assets/four.jpg" class="item-image four" class="pic04"></li> 
+                    <li class="pic05"><img src="assets/five.jpg" class="item-image five" ></li> 
+                    <li class="pic06"><img src="assets/six.jpg" class="item-image six" ></li> 
+                    <li class="pic07"><img src="assets/seven.jpg" class="item-image seven" ></li> 
+                    <li class="pic08"><img src="assets/eight.jpg" class="item-image eight" ></li> 
+                    <li class="pic09"><img src="assets/nine.jpg" class="item-image nine" ></li> 
+                    <li class="pic10"><img src="assets/ten.jpg" class="item-image ten" ></li> 
+                    <li class="pic11"><img src="assets/eleven.jpg" class="item-image eleven" ></li> 
+                    <li class="pic12"><img src="assets/twelve.jpg" class="item-image twelve" ></li> 
+                    </ul>
                 </div>
             </div>
         </section>
@@ -160,7 +190,7 @@
                 Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <div class="about-info">
                 <div class="person-one">
-                    <div class="image-pic-one"></div>
+                    <img class="person-img" src="assets/person-one.jpg">
                     <h3 class="header-name">Adam Jensen</h3>
                     <p class="text-name">Quisque luctus, quam eget molestie commodo, 
                         lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
@@ -172,7 +202,7 @@
                     </ul>
                 </div>
                 <div class="person-two">
-                    <div class="image-pic-two"></div>
+                    <img class="person-img" src="assets/person-two.jpg">
                     <h3 class="header-name">Desmond Miles</h3>
                     <p class="text-name">Curabitur vestibulum eget mauris quis laoreet. 
                         Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
@@ -184,7 +214,7 @@
                      </ul>
                 </div>
                 <div class="person-three">
-                    <div class="image-pic-three"></div>
+                    <img class="person-img" src="assets/person-three.jpg">
                     <h3 class="header-name">Scolara Visari</h3>
                     <p class="text-name">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. 
                         Quisque condimentum.</p>
@@ -199,57 +229,59 @@
         </section>
 
         <section class="quote-block">
-            <h2 class="quote-header" id="contact">Get a Quote</h2>
-            <p class="quote-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
-                Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
-                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+            <div class="wrapper">
+                <h2 class="quote-header" id="contact">Get a Quote</h2>
+                <p class="quote-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. 
+                    Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
+                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
 
-            <div class="contacts-form">
-                <form action="#contact" class="form">
-                    <div class="form__field">
-                        <input type="text" name="name" placeholder="Name" id="name" required />
-                        <span class="form__error">Это поле должно содержать Имя </span>
-                    </div>
-                    <div class="form__field">
-                        <input type="email" name="name" placeholder="E-Mail" id="E-Mail"  required/>
-                        <span class="form__error">Это поле должно содержать E-Mail в формате example@site.com </span>
-                    </div>
-                    <div class="form__field">
-                        <input type="text" name="subject" placeholder="Subject" id="subject">
-                    </div>
-                    <div class="form__field">
-                        <textarea type="text" placeholder="Describe your project in detail..." id="description"></textarea>
-                    </div>
-                    <button type="submit" class="sbm" id="btn">Submit</button>
-                </form>
+                <div class="contacts-form">
+                    <form action="#contact" class="form">
+                        <div class="form__field">
+                            <input type="text" name="name" placeholder="Name" id="name" required />
+                            <span class="form__error">Это поле должно содержать Имя </span>
+                        </div>
+                        <div class="form__field">
+                            <input type="email" name="name" placeholder="E-Mail" id="E-Mail"  required/>
+                            <span class="form__error">Это поле должно содержать E-Mail в формате example@site.com </span>
+                        </div>
+                        <div class="form__field">
+                            <input type="text" name="subject" placeholder="Subject" id="subject">
+                        </div>
+                        <div class="form__field">
+                            <textarea type="text" placeholder="Describe your project in detail..." id="description"></textarea>
+                        </div>
+                        <button type="submit" class="sbm" id="btn">Submit</button>
+                    </form>
 
-                <div id="message-block" class="hidden">
-                    <div id="message">
-                        <p id="message-send">Письмо отправлено</p>
-                        <p><span id="result">Тема:</span></p>
-                        <p><span id="result1">Описание:</span></p>
-                        <br>
-                        <button type="submit" id="close-btn">OK</button>
+                    <div id="message-block" class="hidden">
+                        <div id="message">
+                            <p id="message-send">Письмо отправлено</p>
+                            <p><span id="result">Тема:</span></p>
+                            <p><span id="result1">Описание:</span></p>
+                            <br>
+                            <button type="submit" id="close-btn">OK</button>
+                        </div>
                     </div>
-                </div>
 
-                <div class="contacts">
-                    <h3 class="contacts-header">Contact Information</h3>
-                    <p class="contacts-text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. </p>
-                    <div class="contacts-ad">
-                        <div class="locate"></div>
-                        <span class="ad-text">Elm St. 14/05 Lost City</span>
-                    </div> 
-                    <div class="contacts-ad">
-                        <div class="phone"></div>
-                        <a href="tel:+035283318635"><span class="ad-text"> 03528 331 86 35 </span></a>
-                    </div>
+                    <div class="contacts">
+                        <h3 class="contacts-header">Contact Information</h3>
+                        <p class="contacts-text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. </p>
+                        <div class="contacts-ad">
+                            <div class="locate"></div>
+                            <span class="ad-text">Elm St. 14/05 Lost City</span>
+                        </div> 
+                        <div class="contacts-ad">
+                            <div class="phone"></div>
+                            <a href="tel:+035283318635"><span class="ad-text"> 03528 331 86 35 </span></a>
+                        </div>
+                            
+                        <div class="contacts-ad">
+                            <div class="mail"></div>
+                            <a href="mailto:info@singolo.com"><span class="ad-text">info@singolo.com</span></a>
+                        </div>
                         
-                    <div class="contacts-ad">
-                        <div class="mail"></div>
-                        <a href="mailto:info@singolo.com"><span class="ad-text">info@singolo.com</span></a>
                     </div>
-                    
                 </div>
             </div>
 
@@ -269,5 +301,6 @@
 
     <script src="script.js"></script>
 </body>
+
 
 </html>
