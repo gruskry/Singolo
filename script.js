@@ -1,6 +1,5 @@
 
 
-
 // Scroll
 
 document.addEventListener('scroll', onScroll);
@@ -8,7 +7,7 @@ document.addEventListener('scroll', onScroll);
 function onScroll(event) {
  const curPos = window.scrollY;
  const h2 = document.querySelectorAll('#container h2');
- const links = document.querySelectorAll('#menu a');
+ const links = document.querySelectorAll('#menu li>a');
 
  h2.forEach((el) => {
  el.getAttribute('id');
@@ -19,11 +18,13 @@ function onScroll(event) {
         a.classList.remove('nav-item-active');
         if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
         a.classList.add('nav-item-active'); 
+        
         }
     });
  };
 });
 }
+
 
 //Slider
 
@@ -211,43 +212,57 @@ var slideShow = (function () {
 function horizont() {
     elem = document.getElementById("black-horizontal"); 
     state = elem.style.display; 
-    if (state =='none') elem.style.display='block'; 
-    else elem.style.display='none'; 
+    if (state =='block') elem.style.display='none'; 
+    else elem.style.display='block'; 
  
   }
 
   function vertical() {
     elem = document.getElementById("black-vertical"); 
     state = elem.style.display; 
-    if (state =='none') elem.style.display='block'; 
-    else elem.style.display='none'; 
+    if (state =='block') elem.style.display='none'; 
+    else elem.style.display='block'; 
   }
 
 
-    //Tabs
-  const TAB = document.getElementById('nav-list');
-
-TAB.addEventListener('click', (event) => {
-    TAB.querySelectorAll('li').forEach(elm => elm.classList.remove('item-nav-active'));
-    event.target.classList.add('item-nav-active');
-
  
-});
 
 //Swap img
+
+const TAB = document.querySelectorAll('.item-nav');
+
 function Swap() {
-      let arr = [0,1,2,3,4,5,6,7,8,9,10,11];
-      let arrRandom = [];
-      for (let i = 0; i < 12; i++) {
-        let numRandom = Math.ceil(Math.random() * arr.length-1);
-        arrRandom.push( arr.splice(numRandom, 1) );
+    let selector = '';
+    let temp = Math.round(rand = 1 - 0.5 + Math.random() * (12 - 1 + 1));
+    switch (temp) {
+      case 1: selector = '[class="pic01"]'; break;
+      case 2: selector = '[class="pic02"]'; break;
+      case 3: selector = '[class="pic03"]'; break;
+      case 4: selector = '[class="pic04"]'; break;
+      case 5: selector = '[class="pic05"]'; break;
+      case 6: selector = '[class="pic06"]'; break;
+      case 7: selector = '[class="pic07"]'; break;
+      case 8: selector = '[class="pic08"]'; break;
+      case 9: selector = '[class="pic09"]'; break;
+      case 10: selector = '[class="pic10"]'; break;
+      case 11: selector = '[class="pic11"]'; break;
+      case 12: selector = '[class="pic12"]'; break;
+    }
+    return document.querySelector(selector);
+}
+
+TAB.forEach(el => {
+    el.addEventListener('click', (event) => {
+      TAB.forEach(el => el.classList.remove('item-nav-active'));
+      event.target.classList.add('item-nav-active');
+  
+      for (let i=0; i<20; i++){
+        let first = Swap ();
+        let second = Swap (); 
+        second.after(first);
       }
-      let i = 0;
-      document.querySelectorAll('.item-image').forEach( (item) => {
-        item.style.order = arrRandom[i];
-        i++;
-      })
-};
+    })
+});
 
 document.querySelectorAll('.item-image').forEach( (item) => {
     item.addEventListener('click', (evt) => {
